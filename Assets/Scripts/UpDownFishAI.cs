@@ -17,7 +17,7 @@ public class Wanderer : MonoBehaviour
     internal float decisionTimeCount = 0;
 
     // The possible directions that the object can move int, right, left, up, down, and zero for staying in place. I added zero twice to give a bigger chance if it happening than other directions
-    internal Vector3[] moveDirections = new Vector3[] { Vector3.right, Vector3.left, Vector3.up, Vector3.down, Vector3.zero, Vector3.zero };
+    internal Vector3[] moveDirections = new Vector3[] { Vector3.up, Vector3.down, Vector3.zero, Vector3.zero };
     internal int currentMoveDirection;
 
     // Calls for SpriteRenderer and Body in order to rotate sprite properly.
@@ -64,17 +64,4 @@ public class Wanderer : MonoBehaviour
         currentMoveDirection = Mathf.FloorToInt(Random.Range(0, moveDirections.Length));        
     }
 
-    private void FixedUpdate()
-    {
-        
-        if (currentMoveDirection == 1)
-        {
-            spriteRenderer.flipX = false;
-        }
-        else if (currentMoveDirection == 0)
-        {
-            spriteRenderer.flipX = true;
-        }
-        
-    }
 }

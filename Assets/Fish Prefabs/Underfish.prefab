@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 2494365857391416404}
   - component: {fileID: 4093662512361757417}
   - component: {fileID: 7733510766940443931}
-  m_Layer: 0
-  m_Name: Fish Template
+  m_Layer: 3
+  m_Name: Underfish
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.4732, y: -1.1664, z: 0}
-  m_LocalScale: {x: 4.927669, y: 3.9824965, z: 1}
+  m_LocalScale: {x: 3.2725637, y: 2.6448557, z: 0.66412}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 3416150400190533875, guid: d7891be31356fc04d8f1ccd7e8f6001e, type: 3}
+  m_Sprite: {fileID: 2954823914553191633, guid: 33b55bd11e256eb4f8c9162f3728ce5f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -109,11 +109,11 @@ Rigidbody2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &4093662512361757417
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -126,8 +126,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ca9ec6ee26c9f7459c4dff8d9ab0a54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2
-  decisionTime: {x: 0.1, y: 1}
+  moveSpeed: 3
+  decisionTime: {x: 3, y: 4}
 --- !u!61 &7733510766940443931
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -166,7 +166,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.28, y: 0.21}
+    oldSize: {x: 0.2555, y: 0.16}
     newSize: {x: 4.89, y: 2.93}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
