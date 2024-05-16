@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: bc8c66061cfb9c341b5a48a801adb6e8
+guid: 878c2d2a0a59fd642aef93af079ec73d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -429570895972359786
-    second: sea_kelp_2__png_overlay__by_lewis4721_dg0dl3m-fullview_0
+      213: 7448657840038752002
+    second: kelp placeholder_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -98,7 +98,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sea_kelp_2__png_overlay__by_lewis4721_dg0dl3m-fullview_0
+      name: kelp placeholder_0
       rect:
         serializedVersion: 2
         x: 21
@@ -112,8 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 691a8bbcb8bd90af0800000000000000
-      internalID: -429570895972359786
+      spriteID: 20f20f047d2fe5760800000000000000
+      internalID: 7448657840038752002
       vertices: []
       indices: 
       edges: []

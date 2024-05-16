@@ -13,8 +13,9 @@ GameObject:
   - component: {fileID: 2494365857391416404}
   - component: {fileID: 4093662512361757417}
   - component: {fileID: 7733510766940443931}
+  - component: {fileID: 2497381831381153139}
   m_Layer: 3
-  m_Name: Fish Template
+  m_Name: '!!!Fish Template'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -127,7 +128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
-  decisionTime: {x: 0.1, y: 1}
+  decisionTime: {x: 0.1, y: 1, z: 0}
 --- !u!61 &7733510766940443931
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -174,3 +175,18 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.28, y: 0.21}
   m_EdgeRadius: 0
+--- !u!114 &2497381831381153139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5176468917220711434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8530ec8919ce6443b3a73e0d40f52de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinProduction: 1
+  coinTime: 5
+  invSystem: {fileID: 3879665062693224264, guid: 38ed92600ada28e4abc37fa17fa45b43, type: 3}

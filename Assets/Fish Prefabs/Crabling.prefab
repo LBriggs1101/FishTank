@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 2963524658156498459}
   - component: {fileID: 2494365857391416404}
   - component: {fileID: 7733510766940443931}
-  - component: {fileID: 113183938360504275}
-  - component: {fileID: -5228704411224636261}
+  - component: {fileID: -4298955705989877192}
+  - component: {fileID: -4950404375911746288}
   m_Layer: 3
-  m_Name: Ratfish
+  m_Name: Crabling
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 5176468917220711434}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.4732, y: -1.1664, z: 0}
+  m_LocalPosition: {x: -1.7145411, y: -2.7998383, z: 0}
   m_LocalScale: {x: 4.927669, y: 3.9824965, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -76,8 +76,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 2584408242736443505, guid: a00b47a8d9eb44f48a5a1fc198ac022c, type: 3}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: 5449891778526669790, guid: 890ab65cd4ae6ad4ab3f4d6feb9f4830, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -153,7 +153,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.246, y: 0.2145}
+    oldSize: {x: 0.256, y: 0.2255}
     newSize: {x: 4.89, y: 2.93}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -161,7 +161,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.28, y: 0.21}
   m_EdgeRadius: 0
---- !u!114 &113183938360504275
+--- !u!114 &-4298955705989877192
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -170,12 +170,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 5176468917220711434}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ad967c02a6843044a19a4bce1a65c5c, type: 3}
+  m_Script: {fileID: 11500000, guid: 67c76f691ff69634992be0d02497a92a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0.3
+  moveSpeed: 0.7
   decisionTime: {x: 1, y: 4, z: 0}
---- !u!114 &-5228704411224636261
+--- !u!114 &-4950404375911746288
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

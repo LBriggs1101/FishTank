@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4821773988154578481}
   - component: {fileID: 3352847947913661932}
   - component: {fileID: 6394610546942157009}
+  - component: {fileID: -134532311772214460}
   m_Layer: 3
   m_Name: Snalefish
   m_TagString: Untagged
@@ -127,7 +128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.2
-  decisionTime: {x: 2, y: 2}
+  decisionTime: {x: 2, y: 2, z: 0}
 --- !u!61 &6394610546942157009
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -174,3 +175,18 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.28, y: 0.21}
   m_EdgeRadius: 0
+--- !u!114 &-134532311772214460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8019395226234234638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8530ec8919ce6443b3a73e0d40f52de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinProduction: 1
+  coinTime: 5
+  invSystem: {fileID: 3879665062693224264, guid: 38ed92600ada28e4abc37fa17fa45b43, type: 3}

@@ -5,7 +5,7 @@ using UnityEngine;
 /// <summary>
 /// This makes an object move randomly in a set of directions, with some random time delay in between each decision
 /// </summary>
-public class Wanderer : MonoBehaviour
+public class JellyfishAI : MonoBehaviour
 {
     internal Transform thisTransform;
 
