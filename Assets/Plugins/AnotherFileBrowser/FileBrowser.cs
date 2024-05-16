@@ -22,7 +22,7 @@ namespace AnotherFileBrowser.Windows
         {
             var ofd = new VistaOpenFileDialog();
             ofd.Multiselect = false;
-            ofd.Title = browserProperties.title == null ? "Select a File" : browserProperties.title;
+            ofd.Title = browserProperties.title == null ? "Select Your New Fish" : browserProperties.title;
             ofd.InitialDirectory = browserProperties.initialDir == null ? @"C:\" : browserProperties.initialDir;
             ofd.Filter = browserProperties.filter == null ? "All files (*.*)|*.*" : browserProperties.filter;
             ofd.FilterIndex = browserProperties.filterIndex + 1;

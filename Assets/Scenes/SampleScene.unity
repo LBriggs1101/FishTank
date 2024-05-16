@@ -919,6 +919,7 @@ GameObject:
   - component: {fileID: 1898289186}
   - component: {fileID: 1898289185}
   - component: {fileID: 1898289184}
+  - component: {fileID: 1898289187}
   m_Layer: 5
   m_Name: LoadSavedImage
   m_TagString: Untagged
@@ -990,9 +991,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1752640051}
-        m_TargetAssemblyTypeName: ImportImagePath, Assembly-CSharp
-        m_MethodName: loadImage
+      - m_Target: {fileID: 1898289187}
+        m_TargetAssemblyTypeName: SaveTest, Assembly-CSharp
+        m_MethodName: saveTest
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1040,6 +1041,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1898289182}
   m_CullTransparentMesh: 1
+--- !u!114 &1898289187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898289182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37aeeaaa0e00fc4448c006a1b500c6ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  saveSystem: {fileID: 1752640055}
 --- !u!1 &2137586950
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using UnityEditor;
 using System.IO;
 using UnityEngine.Networking;
+using AnotherFileBrowser.Windows;
 
 public class ImportImagePath : MonoBehaviour
 {
@@ -23,7 +24,14 @@ public class ImportImagePath : MonoBehaviour
 
     public void OpenExplorer()
     {
-        path = EditorUtility.OpenFilePanel("Import your fish png", "", "png, jpg");
+        var bp = new BrowserProperties();
+        bp.filter = "Image files (*.png) | *.png";
+        bp.filterIndex = 0;
+
+        new FileBrowser().OpenFileBrowser(bp, bpath =>
+        {
+            path = bpath;
+        });
         GetImage(1);
     }
 
@@ -73,8 +81,7 @@ public class ImportImagePath : MonoBehaviour
             convertedSprite = Sprite.Create(actualTexture, new Rect(0.0f, 0.0f, actualTexture.width, actualTexture.height), new Vector2(0.5f, 0.5f), actualTexture.width);
             Debug.Log(convertedSprite);
             sr.sprite = convertedSprite;
-            FileUtil.MoveFileOrDirectory(path, newPicLocation + Path.GetFileName(path));
-            saveSystem.saveNewImage(newPicLocation + Path.GetFileName(path));
+            File.Move(path, newPicLocation + Path.GetFileName(path));
         }
     }
 

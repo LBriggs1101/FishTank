@@ -12,9 +12,19 @@ public class SaveFile : MonoBehaviour
         directory = Application.dataPath + "/SaveFolder/Save.txt";
     }
 
-    public void saveNewImage(string filePath)
+    public void saveNewFish(string filePath, string fishName, int fishType, int fishSpeed, int fishSize)
     {
-       File.WriteAllText(directory, filePath); 
+       File.AppendAllText(
+        directory, 
+        "\n" +
+        "Fish" + "\n" +
+        fishName + "\n" +
+        filePath + "\n" +
+        fishType.ToString() + "\n" +
+        fishSpeed.ToString() + "\n" +
+        fishSize.ToString() + "\n"
+
+        );
     }
 
     public string loadImage()
