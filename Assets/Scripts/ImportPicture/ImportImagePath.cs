@@ -6,6 +6,7 @@ using UnityEditor;
 using System.IO;
 using UnityEngine.Networking;
 using AnotherFileBrowser.Windows;
+using TMPro;
 
 public class ImportImagePath : MonoBehaviour
 {
@@ -16,6 +17,10 @@ public class ImportImagePath : MonoBehaviour
     public SpriteRenderer sr;
     public SaveFile saveSystem;
     private string newPicLocation;
+
+    public SaveTest saveObject;
+
+    public TMP_Text pathText;
 
     private void Start()
     {
@@ -81,7 +86,8 @@ public class ImportImagePath : MonoBehaviour
             convertedSprite = Sprite.Create(actualTexture, new Rect(0.0f, 0.0f, actualTexture.width, actualTexture.height), new Vector2(0.5f, 0.5f), actualTexture.width);
             Debug.Log(convertedSprite);
             sr.sprite = convertedSprite;
-            File.Move(path, newPicLocation + Path.GetFileName(path));
+            pathText.text = path;
+            saveObject.fishPath = newPicLocation + Path.GetFileName(path);
         }
     }
 
@@ -105,5 +111,10 @@ public class ImportImagePath : MonoBehaviour
             Debug.Log(convertedSprite);
             sr.sprite = convertedSprite;
         }
+    }
+
+    public void MoveImageForSave()
+    {
+        File.Move(path, newPicLocation + Path.GetFileName(path));
     }
 }

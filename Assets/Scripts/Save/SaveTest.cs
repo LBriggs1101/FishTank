@@ -1,14 +1,56 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class SaveTest : MonoBehaviour
 {
 
     public SaveFile saveSystem;
 
+    public TMP_Dropdown dropDown;
+
+    public TMP_InputField inputFieldName;
+
+    public ImportImagePath imageImportObject;
+
+    public string fishPath = "";
+    public string fishName = "";
+
+    public int fishType = 0;
+    public int fishSpeed = 1;
+    public int fishSize = 1;
+
+    public GameObject failText;
+
+    public void changeFishType()
+    {
+        fishType = dropDown.value;
+    }
+
+    public void changeFishName()
+    {
+        fishName = inputFieldName.text;
+    }
+
     public void saveTest()
     {
-        saveSystem.saveNewFish("Path", "Kyle", 1, 1, 1);
+        if((fishPath != null && fishPath != "") && (fishName != null && fishName != ""))
+        {
+            saveSystem.saveNewFish(fishPath, fishName, fishType, fishSpeed, fishSize);
+            imageImportObject.MoveImageForSave();
+        }
+        else
+        {
+            failText.SetActive(true);
+            StartCoroutine(timedDisableText());
+        }
+    }
+
+    private IEnumerator timedDisableText()
+    {
+        yield return new WaitForSecondsRealtime(2f);
+        failText.SetActive(false);
     }
 }
