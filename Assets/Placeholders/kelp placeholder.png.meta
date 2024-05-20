@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      kelp placeholder_0: 7448657840038752002
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
