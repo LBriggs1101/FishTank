@@ -9,7 +9,7 @@ public class BuyDeepFish : MonoBehaviour
 
     public void GetFish()
     {
-       Instantiate(fishObject, new Vector3(0, -3, 0), Quaternion.identity);
+       Instantiate(fishObject, new Vector3(Random.Range(-9.0f, 9.0f), Random.Range(-1.5f, -4f), 0), Quaternion.identity);
     }
 
 }
