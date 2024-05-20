@@ -11,7 +11,11 @@ public class SaveTest : MonoBehaviour
 
     public TMP_Dropdown dropDown;
 
+    public TMP_Dropdown dropDownSize;
+
     public TMP_InputField inputFieldName;
+
+    public TMP_InputField inputFieldSpeed;
 
     public ImportImagePath imageImportObject;
 
@@ -29,9 +33,19 @@ public class SaveTest : MonoBehaviour
         fishType = dropDown.value;
     }
 
+    public void changeFishSize()
+    {
+        fishSize = dropDownSize.value;
+    }
+
     public void changeFishName()
     {
         fishName = inputFieldName.text;
+    }
+
+    public void changeFishSpeed()
+    {
+        fishSpeed = int.Parse(inputFieldSpeed.text);
     }
 
     public void saveTest()
