@@ -11,12 +11,15 @@ public class ShopCode : MonoBehaviour
     [SerializeField] GameObject bigShop;
     [SerializeField] GameObject deepShop;
     [SerializeField] GameObject oddShop;
+    [SerializeField] GameObject shopButton;
+
 
 
     public void ShopOpen()
     {
         shopMenu.SetActive(true);
         smallShop.SetActive(true);
+        shopButton.SetActive(false);
     }
 
     public void ShopClose()
@@ -28,6 +31,8 @@ public class ShopCode : MonoBehaviour
         bigShop.SetActive(false);
         deepShop.SetActive(false);
         oddShop.SetActive(false);
+
+        shopButton.SetActive(true);
     }
 
     public void SmallFish()
