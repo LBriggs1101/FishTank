@@ -14,7 +14,6 @@ public class ShopCode : MonoBehaviour
     [SerializeField] GameObject shopButton;
 
 
-
     public void ShopOpen()
     {
         shopMenu.SetActive(true);
@@ -79,4 +78,5 @@ public class ShopCode : MonoBehaviour
         deepShop.SetActive(false);
         oddShop.SetActive(true);
     }
+
 }

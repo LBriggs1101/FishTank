@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3352847947913661932}
   - component: {fileID: 6394610546942157009}
   - component: {fileID: -134532311772214460}
+  - component: {fileID: 9068063351163427643}
   m_Layer: 3
   m_Name: Kittyfish
   m_TagString: Untagged
@@ -189,3 +190,16 @@ MonoBehaviour:
   coinProduction: 2
   coinTime: 6
   invSystem: {fileID: 3879665062693224264, guid: 38ed92600ada28e4abc37fa17fa45b43, type: 3}
+--- !u!114 &9068063351163427643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8019395226234234638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00be797fa72cd9644a5b89af34fc1108, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedObject: {fileID: 0}

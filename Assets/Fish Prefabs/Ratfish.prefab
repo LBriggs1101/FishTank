@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7733510766940443931}
   - component: {fileID: 113183938360504275}
   - component: {fileID: -5228704411224636261}
+  - component: {fileID: -7688668474347821635}
   m_Layer: 3
   m_Name: Ratfish
   m_TagString: Untagged
@@ -189,3 +190,16 @@ MonoBehaviour:
   coinProduction: 3
   coinTime: 12
   invSystem: {fileID: 3879665062693224264, guid: 38ed92600ada28e4abc37fa17fa45b43, type: 3}
+--- !u!114 &-7688668474347821635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5176468917220711434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00be797fa72cd9644a5b89af34fc1108, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedObject: {fileID: 0}
