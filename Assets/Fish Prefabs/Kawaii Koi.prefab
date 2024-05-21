@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3004469371314352279}
   - component: {fileID: 7233070476357308842}
   m_Layer: 3
-  m_Name: Kawaii Carp
+  m_Name: Kawaii Koi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -127,7 +127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ca9ec6ee26c9f7459c4dff8d9ab0a54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 7
   decisionTime: {x: 0, y: 0.1, z: 0}
 --- !u!61 &3004469371314352279
 BoxCollider2D:
