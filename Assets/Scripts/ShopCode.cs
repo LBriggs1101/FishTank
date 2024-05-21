@@ -22,6 +22,12 @@ public class ShopCode : MonoBehaviour
     public void ShopClose()
     {
         shopMenu.SetActive(false);
+        smallShop.SetActive(false);
+
+        midShop.SetActive(false);
+        bigShop.SetActive(false);
+        deepShop.SetActive(false);
+        oddShop.SetActive(false);
     }
 
     public void SmallFish()
