@@ -279,7 +279,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 97863220}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6674637297517221830}
+        m_TargetAssemblyTypeName: ShopCode, Assembly-CSharp
+        m_MethodName: OddFish
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &97863220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -606,7 +618,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 167178116}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6674637297517221830}
+        m_TargetAssemblyTypeName: ShopCode, Assembly-CSharp
+        m_MethodName: DeepFish
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &167178116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1716,7 +1740,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &500304097
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2864,7 +2888,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1287839424
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2968,7 +2992,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1301552711}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6674637297517221830}
+        m_TargetAssemblyTypeName: ShopCode, Assembly-CSharp
+        m_MethodName: BigFish
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1301552711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3088,7 +3124,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1324169773}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6674637297517221830}
+        m_TargetAssemblyTypeName: ShopCode, Assembly-CSharp
+        m_MethodName: SmallFish
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1324169773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3217,7 +3265,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1372518236
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3544,7 +3592,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1549168779
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3583,7 +3631,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1549988294
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3911,7 +3959,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1638272228}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6674637297517221830}
+        m_TargetAssemblyTypeName: ShopCode, Assembly-CSharp
+        m_MethodName: MidFish
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1638272228
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4471,7 +4531,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1809416552
 RectTransform:
   m_ObjectHideFlags: 0
