@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class SaveTest : MonoBehaviour
 {
@@ -24,7 +25,7 @@ public class SaveTest : MonoBehaviour
 
     public int fishType = 0;
     public int fishSpeed = 1;
-    public int fishSize = 1;
+    public int fishSize = 0;
 
     public GameObject failText;
 
@@ -54,6 +55,7 @@ public class SaveTest : MonoBehaviour
         {
             saveSystem.saveNewFish(fishPath, fishName, fishType, fishSpeed, fishSize);
             imageImportObject.MoveImageForSave();
+            SceneManager.LoadScene("MainMenu");
         }
         else
         {
