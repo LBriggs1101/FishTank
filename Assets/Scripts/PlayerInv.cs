@@ -9,6 +9,7 @@ public class PlayerInv : MonoBehaviour
     public int playerCoins = 10;
 
     public PlayerInv invSystem;
+    public Texture2D coinIcon;
 
 
     void Start()
@@ -20,5 +21,11 @@ public class PlayerInv : MonoBehaviour
     {
        playerCoins = invSystem.playerCoins;
         
+    }
+
+    public void OnGUI()
+    {
+        GUI.Label(new Rect(10, 10, 100, 100), coinIcon);
+        GUI.Label(new Rect(110, 45, 100, 100), playerCoins.ToString());
     }
 }

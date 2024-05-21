@@ -22,8 +22,4 @@ public class CoinProduction : MonoBehaviour
         StartCoroutine("Produce");
     }
 
-    void Update()
-    {
-        
-    }
 }

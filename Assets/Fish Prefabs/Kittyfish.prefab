@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6394610546942157009}
   - component: {fileID: -134532311772214460}
   m_Layer: 3
-  m_Name: Snalefish
+  m_Name: Kittyfish
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.54, y: 2.39, z: 0}
-  m_LocalScale: {x: 5.4238963, y: 4.383542, z: 1.1007022}
+  m_LocalScale: {x: 7.8402424, y: 6.33641, z: 1.591065}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 585679349008182817, guid: 541203be3ed5bc043ad868400bb906fc, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4a2d0a551d350be4387b8c49a6416eeb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -127,8 +127,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ca9ec6ee26c9f7459c4dff8d9ab0a54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0.2
-  decisionTime: {x: 2, y: 2, z: 0}
+  moveSpeed: 1
+  decisionTime: {x: 3, y: 4, z: 0}
 --- !u!61 &6394610546942157009
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -165,7 +165,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.2415, y: 0.1905}
+    oldSize: {x: 0.256, y: 0.256}
     newSize: {x: 4.89, y: 2.93}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
