@@ -40,11 +40,7 @@ public class ImportImagePath : MonoBehaviour
         GetImage(1);
     }
 
-    public void loadImage()
-    {
-        path = saveSystem.loadImage();
-        GetImage(0);
-    }
+    
 
     void GetImage(int num)
     {

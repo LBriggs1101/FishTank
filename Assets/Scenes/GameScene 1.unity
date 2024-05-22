@@ -3029,6 +3029,8 @@ GameObject:
   - component: {fileID: 1215199329}
   - component: {fileID: 1215199328}
   - component: {fileID: 1215199327}
+  - component: {fileID: 1215199331}
+  - component: {fileID: 1215199330}
   m_Layer: 5
   m_Name: LoadFish
   m_TagString: Untagged
@@ -3099,7 +3101,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1215199328}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1215199331}
+        m_TargetAssemblyTypeName: ImportImageLoad, Assembly-CSharp
+        m_MethodName: loadFish
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1215199328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3138,6 +3152,40 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1215199325}
   m_CullTransparentMesh: 1
+--- !u!114 &1215199330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1215199325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98136ed0ca01a344eb898338cfd65f8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1215199331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1215199325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8627f1971467d7d48af2f912f5f38fa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sr: {fileID: 0}
+  saveSystem: {fileID: 1215199330}
+  saveFileText: []
+  prefabGuppy: {fileID: 5176468917220711434, guid: 4570fac060eaa444ab9da4f963bf5ff8, type: 3}
+  prefabDeepGuppy: {fileID: 5176468917220711434, guid: 9543b96209193e64e934e1a745d756fc, type: 3}
+  prefabLazy: {fileID: 8578768332714649132, guid: 8f38279999834b140947c604c06c13d5, type: 3}
+  prefabDeepLazy: {fileID: 8019395226234234638, guid: 964624cadd569f14ca6a274c74809d14, type: 3}
+  prefabErratic: {fileID: 2893552712618293665, guid: e8be60e85c0e49243ad62fb0cca26738, type: 3}
+  prefabJelly: {fileID: 5176468917220711434, guid: e4f6ad2da36f2474eb0a7782b59f38bb, type: 3}
+  prefabCrab: {fileID: 5176468917220711434, guid: de987d48b6123564ab40eb700b49bcac, type: 3}
 --- !u!1 &1287839423
 GameObject:
   m_ObjectHideFlags: 0

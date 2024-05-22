@@ -27,7 +27,7 @@ public class SaveFile : MonoBehaviour
         );
     }
 
-    public string loadImage()
+    public string[] loadFile()
     {
         StreamReader reader = new StreamReader(directory);
         string text = reader.ReadToEnd();
@@ -36,6 +36,6 @@ public class SaveFile : MonoBehaviour
 
         string[] lines = text.Split('\n');
 
-        return lines[0];
+        return lines;
     }
 }
