@@ -23,6 +23,7 @@ public class ImportImageLoad : MonoBehaviour
 
     private GameObject objectToSpawn;
     private Vector3 spawnLocation;
+    private float scaleMultiplyer;
 
     private void Start()
     {
@@ -82,8 +83,20 @@ public class ImportImageLoad : MonoBehaviour
         {
             currentNewFish.GetComponent<CrabAI>().moveSpeed = int.Parse(saveFileText[5]);
         }
-        
 
+        if(int.Parse(saveFileText[6]) == 0)
+        {
+            scaleMultiplyer = 6;
+        }
+        else if(int.Parse(saveFileText[6]) == 1)
+        {
+            scaleMultiplyer = 4;
+        }
+        else
+        {
+            scaleMultiplyer = 2;
+        }
+        
         path = saveFileText[3];
 
         StartCoroutine(DownloadImage());
@@ -104,7 +117,7 @@ public class ImportImageLoad : MonoBehaviour
             Debug.Log("Work?");
             Debug.Log(((DownloadHandlerTexture)request.downloadHandler).texture);
             actualTexture = ((DownloadHandlerTexture)request.downloadHandler).texture;
-            convertedSprite = Sprite.Create(actualTexture, new Rect(0.0f, 0.0f, actualTexture.width, actualTexture.height), new Vector2(0.5f, 0.5f), actualTexture.width * 4);
+            convertedSprite = Sprite.Create(actualTexture, new Rect(0.0f, 0.0f, actualTexture.width, actualTexture.height), new Vector2(0.5f, 0.5f), actualTexture.width * scaleMultiplyer);
             Debug.Log(convertedSprite);
             sr.sprite = convertedSprite;
         }
