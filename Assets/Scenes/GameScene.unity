@@ -196,7 +196,7 @@ MonoBehaviour:
   fishObject: {fileID: 5176468917220711434, guid: ab3d63a9b22c91f40a554156558a5ab1, type: 3}
   fishCost: 20
   invSystem: {fileID: 3879665062693224264, guid: 38ed92600ada28e4abc37fa17fa45b43, type: 3}
-  sex: {fileID: 0}
+  fishBreed: {fileID: 0}
 --- !u!114 &13036374
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -388,7 +388,7 @@ MonoBehaviour:
   fishObject: {fileID: 5176468917220711434, guid: 42f0031f10850d346b62a1ee60291bdb, type: 3}
   fishCost: 100
   invSystem: {fileID: 3879665062693224264, guid: 38ed92600ada28e4abc37fa17fa45b43, type: 3}
-  sex: {fileID: 0}
+  fishBreed: {fileID: 0}
 --- !u!114 &53601332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1934,7 +1934,7 @@ MonoBehaviour:
   fishObject: {fileID: 8578768332714649132, guid: c6b3b0dd42aae3549845309ea2ef2f5c, type: 3}
   fishCost: 10
   invSystem: {fileID: 3879665062693224264, guid: 38ed92600ada28e4abc37fa17fa45b43, type: 3}
-  sex: {fileID: 0}
+  fishBreed: {fileID: 0}
 --- !u!114 &239602686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2632,7 +2632,7 @@ MonoBehaviour:
   fishObject: {fileID: 2893552712618293665, guid: ffeb8067b7fc9614f8c91e1943b68d81, type: 3}
   fishCost: 20
   invSystem: {fileID: 3879665062693224264, guid: 38ed92600ada28e4abc37fa17fa45b43, type: 3}
-  sex: {fileID: 0}
+  fishBreed: {fileID: 0}
 --- !u!114 &342227067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3117,6 +3117,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1544209613}
         m_TargetAssemblyTypeName: BuyFish, Assembly-CSharp
         m_MethodName: GetFish
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1544209618}
+        m_TargetAssemblyTypeName: FishBreed, Assembly-CSharp
+        m_MethodName: popIncrease
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8366,7 +8378,7 @@ MonoBehaviour:
   fishObject: {fileID: 8578768332714649132, guid: 57c56412430030241b3baa6ecac2a350, type: 3}
   fishCost: 7
   invSystem: {fileID: 3879665062693224264, guid: 38ed92600ada28e4abc37fa17fa45b43, type: 3}
-  sex: {fileID: 1544209618}
+  fishBreed: {fileID: 0}
 --- !u!114 &1544209614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9315,7 +9327,7 @@ MonoBehaviour:
   fishObject: {fileID: 8578768332714649132, guid: 782e8f4e804e6b549b536f8651665824, type: 3}
   fishCost: 10
   invSystem: {fileID: 3879665062693224264, guid: 38ed92600ada28e4abc37fa17fa45b43, type: 3}
-  sex: {fileID: 0}
+  fishBreed: {fileID: 0}
 --- !u!114 &1645096485
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9483,7 +9495,7 @@ MonoBehaviour:
   fishObject: {fileID: 2893552712618293665, guid: a35a35b5c00d0e94b8a02f6a2a166756, type: 3}
   fishCost: 15
   invSystem: {fileID: 3879665062693224264, guid: 38ed92600ada28e4abc37fa17fa45b43, type: 3}
-  sex: {fileID: 0}
+  fishBreed: {fileID: 0}
 --- !u!114 &1663905949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11290,7 +11302,7 @@ MonoBehaviour:
   fishObject: {fileID: 5176468917220711434, guid: a283428457c0eed44b7057f9351e14c7, type: 3}
   fishCost: 20
   invSystem: {fileID: 3879665062693224264, guid: 38ed92600ada28e4abc37fa17fa45b43, type: 3}
-  sex: {fileID: 0}
+  fishBreed: {fileID: 0}
 --- !u!114 &1998416172
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11749,7 +11761,7 @@ MonoBehaviour:
   fishObject: {fileID: 8578768332714649132, guid: b4e1f4b47bd929242adb050774d458db, type: 3}
   fishCost: 20
   invSystem: {fileID: 3879665062693224264, guid: 38ed92600ada28e4abc37fa17fa45b43, type: 3}
-  sex: {fileID: 0}
+  fishBreed: {fileID: 0}
 --- !u!114 &2040450305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12270,7 +12282,7 @@ MonoBehaviour:
   fishObject: {fileID: 8578768332714649132, guid: 9f17f340ae2e25145956000bd443493c, type: 3}
   fishCost: 30
   invSystem: {fileID: 3879665062693224264, guid: 38ed92600ada28e4abc37fa17fa45b43, type: 3}
-  sex: {fileID: 0}
+  fishBreed: {fileID: 0}
 --- !u!114 &2130453230
 MonoBehaviour:
   m_ObjectHideFlags: 0

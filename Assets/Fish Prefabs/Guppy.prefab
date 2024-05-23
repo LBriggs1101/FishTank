@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 3004469371314352279}
   - component: {fileID: -3535635411765329692}
   - component: {fileID: 952659619226041494}
-  - component: {fileID: 1248594562097389040}
   m_Layer: 3
   m_Name: Guppy
   m_TagString: Untagged
@@ -204,17 +203,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectedObject: {fileID: 0}
---- !u!114 &1248594562097389040
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8578768332714649132}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2bde7471bd738e04bb21a96535bc9b9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fishPop: 2
-  fishObject: {fileID: 8578768332714649132}
