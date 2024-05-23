@@ -38,6 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -195,6 +196,7 @@ MonoBehaviour:
   fishObject: {fileID: 5176468917220711434, guid: ab3d63a9b22c91f40a554156558a5ab1, type: 3}
   fishCost: 20
   invSystem: {fileID: 3879665062693224264, guid: 38ed92600ada28e4abc37fa17fa45b43, type: 3}
+  sex: {fileID: 0}
 --- !u!114 &13036374
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -386,6 +388,7 @@ MonoBehaviour:
   fishObject: {fileID: 5176468917220711434, guid: 42f0031f10850d346b62a1ee60291bdb, type: 3}
   fishCost: 100
   invSystem: {fileID: 3879665062693224264, guid: 38ed92600ada28e4abc37fa17fa45b43, type: 3}
+  sex: {fileID: 0}
 --- !u!114 &53601332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1180,7 +1183,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Guppy
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1749,6 +1753,90 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 173751135}
   m_CullTransparentMesh: 1
+--- !u!1 &218606173
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 218606175}
+  - component: {fileID: 218606174}
+  m_Layer: 0
+  m_Name: Ocean Background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &218606174
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218606173}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: -10
+  m_Sprite: {fileID: 21300000, guid: 40eac34b06abd504089316b14fe830a1, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 19.2, y: 10.8}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &218606175
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218606173}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.0053806305, y: -0.18479514, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &219859745
 GameObject:
   m_ObjectHideFlags: 0
@@ -1846,6 +1934,7 @@ MonoBehaviour:
   fishObject: {fileID: 8578768332714649132, guid: c6b3b0dd42aae3549845309ea2ef2f5c, type: 3}
   fishCost: 10
   invSystem: {fileID: 3879665062693224264, guid: 38ed92600ada28e4abc37fa17fa45b43, type: 3}
+  sex: {fileID: 0}
 --- !u!114 &239602686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2034,7 +2123,7 @@ Transform:
   m_GameObject: {fileID: 246659012}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.512846, y: -1.6379313, z: -0.03914802}
+  m_LocalPosition: {x: 7.42, y: -1.72, z: -0.03914802}
   m_LocalScale: {x: 1.0218211, y: 10.430334, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2543,6 +2632,7 @@ MonoBehaviour:
   fishObject: {fileID: 2893552712618293665, guid: ffeb8067b7fc9614f8c91e1943b68d81, type: 3}
   fishCost: 20
   invSystem: {fileID: 3879665062693224264, guid: 38ed92600ada28e4abc37fa17fa45b43, type: 3}
+  sex: {fileID: 0}
 --- !u!114 &342227067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4112,7 +4202,7 @@ Transform:
   m_GameObject: {fileID: 586039312}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.61, y: -0.85, z: 0}
+  m_LocalPosition: {x: -0.68, y: -1.38, z: 0}
   m_LocalScale: {x: 51.613, y: 0.475, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5707,7 +5797,7 @@ Transform:
   m_GameObject: {fileID: 992093092}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.906153, y: -1.6379313, z: -0.03914802}
+  m_LocalPosition: {x: -11.03, y: -1.62, z: -0.03914802}
   m_LocalScale: {x: 1.0218211, y: 10.430334, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8231,6 +8321,7 @@ GameObject:
   - component: {fileID: 1544209614}
   - component: {fileID: 1544209613}
   - component: {fileID: 1544209617}
+  - component: {fileID: 1544209618}
   m_Layer: 5
   m_Name: Guppy Shop
   m_TagString: Untagged
@@ -8275,6 +8366,7 @@ MonoBehaviour:
   fishObject: {fileID: 8578768332714649132, guid: 57c56412430030241b3baa6ecac2a350, type: 3}
   fishCost: 7
   invSystem: {fileID: 3879665062693224264, guid: 38ed92600ada28e4abc37fa17fa45b43, type: 3}
+  sex: {fileID: 1544209618}
 --- !u!114 &1544209614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8384,6 +8476,20 @@ MonoBehaviour:
   fishInfo: {fileID: 320364123}
   pageController: {fileID: 6674637297517221831}
   pageVal: 1
+--- !u!114 &1544209618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1544209611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bde7471bd738e04bb21a96535bc9b9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fishPop: 1
+  fishObject: {fileID: 8578768332714649132, guid: 57c56412430030241b3baa6ecac2a350, type: 3}
 --- !u!1 &1549168778
 GameObject:
   m_ObjectHideFlags: 0
@@ -9209,6 +9315,7 @@ MonoBehaviour:
   fishObject: {fileID: 8578768332714649132, guid: 782e8f4e804e6b549b536f8651665824, type: 3}
   fishCost: 10
   invSystem: {fileID: 3879665062693224264, guid: 38ed92600ada28e4abc37fa17fa45b43, type: 3}
+  sex: {fileID: 0}
 --- !u!114 &1645096485
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9376,6 +9483,7 @@ MonoBehaviour:
   fishObject: {fileID: 2893552712618293665, guid: a35a35b5c00d0e94b8a02f6a2a166756, type: 3}
   fishCost: 15
   invSystem: {fileID: 3879665062693224264, guid: 38ed92600ada28e4abc37fa17fa45b43, type: 3}
+  sex: {fileID: 0}
 --- !u!114 &1663905949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10886,90 +10994,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1906846499}
   m_CullTransparentMesh: 1
---- !u!1 &1944198160
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1944198162}
-  - component: {fileID: 1944198161}
-  m_Layer: 0
-  m_Name: Sand Placeholder
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!212 &1944198161
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1944198160}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: -5
-  m_Sprite: {fileID: 362921126384824654, guid: 22de00a33b17be644b561f22a35ae013, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 19.2, y: 5.6}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &1944198162
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1944198160}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.02, y: -3.3, z: 0}
-  m_LocalScale: {x: 1.0186, y: 1.041, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1948986214
 GameObject:
   m_ObjectHideFlags: 0
@@ -11266,6 +11290,7 @@ MonoBehaviour:
   fishObject: {fileID: 5176468917220711434, guid: a283428457c0eed44b7057f9351e14c7, type: 3}
   fishCost: 20
   invSystem: {fileID: 3879665062693224264, guid: 38ed92600ada28e4abc37fa17fa45b43, type: 3}
+  sex: {fileID: 0}
 --- !u!114 &1998416172
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11724,6 +11749,7 @@ MonoBehaviour:
   fishObject: {fileID: 8578768332714649132, guid: b4e1f4b47bd929242adb050774d458db, type: 3}
   fishCost: 20
   invSystem: {fileID: 3879665062693224264, guid: 38ed92600ada28e4abc37fa17fa45b43, type: 3}
+  sex: {fileID: 0}
 --- !u!114 &2040450305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12244,6 +12270,7 @@ MonoBehaviour:
   fishObject: {fileID: 8578768332714649132, guid: 9f17f340ae2e25145956000bd443493c, type: 3}
   fishCost: 30
   invSystem: {fileID: 3879665062693224264, guid: 38ed92600ada28e4abc37fa17fa45b43, type: 3}
+  sex: {fileID: 0}
 --- !u!114 &2130453230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12540,8 +12567,8 @@ SceneRoots:
   - {fileID: 519420032}
   - {fileID: 1505177542}
   - {fileID: 508374717}
-  - {fileID: 1944198162}
   - {fileID: 586039315}
   - {fileID: 6467139708252948411}
   - {fileID: 603174897}
   - {fileID: 135677617}
+  - {fileID: 218606175}

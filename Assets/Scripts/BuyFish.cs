@@ -9,6 +9,8 @@ public class BuyFish : MonoBehaviour
     public int fishCost;
     public PlayerInv invSystem;
 
+    public FishBreed sex;
+
 
     public void GetFish()
     {
@@ -16,6 +18,7 @@ public class BuyFish : MonoBehaviour
         {
             Instantiate(fishObject, new Vector3(Random.Range(-9.0f, 9.0f), Random.Range(-1.0f, 4.5f), 0), Quaternion.identity);
             invSystem.playerCoins = invSystem.playerCoins - fishCost;
+            sex.fishPop = +1;
         }
     }
 
