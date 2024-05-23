@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
+using TMPro;
 
 public class ImportImageLoad : MonoBehaviour
 {
@@ -24,6 +25,15 @@ public class ImportImageLoad : MonoBehaviour
     private GameObject objectToSpawn;
     private Vector3 spawnLocation;
     private float scaleMultiplyer;
+    private int fileLocation;
+
+    public string fishName;
+    public TMP_InputField inputFieldName;
+
+    public void updateFishName()
+    {
+        fishName = inputFieldName.text;
+    }
 
     private void Start()
     {
@@ -33,7 +43,17 @@ public class ImportImageLoad : MonoBehaviour
     public void loadFish()
     {
 
-        switch(int.Parse(saveFileText[4]))
+        for(int x = 0; x < saveFileText.Length; x++)
+        {
+            if(saveFileText[x] == fishName)
+            {
+                fileLocation = x;
+            }
+        }
+
+        Debug.Log(int.Parse(saveFileText[fileLocation + 2]));
+
+        switch(int.Parse(saveFileText[fileLocation + 2]))
         {
             case 0:
                 objectToSpawn = prefabGuppy;
@@ -58,7 +78,7 @@ public class ImportImageLoad : MonoBehaviour
                 break;
         }
 
-        if(int.Parse(saveFileText[4]) == 1 || int.Parse(saveFileText[4]) == 3 || int.Parse(saveFileText[4]) == 6)
+        if(int.Parse(saveFileText[fileLocation + 2]) == 1 || int.Parse(saveFileText[fileLocation + 2]) == 3 || int.Parse(saveFileText[fileLocation + 2]) == 6)
         {
             spawnLocation = new Vector3(0, -3, 0);
         }
@@ -71,24 +91,24 @@ public class ImportImageLoad : MonoBehaviour
 
         sr = currentNewFish.GetComponent<SpriteRenderer>();
 
-        if(int.Parse(saveFileText[4]) < 5)
+        if(int.Parse(saveFileText[fileLocation + 2]) < 5)
         {
-            currentNewFish.GetComponent<Wanderer>().moveSpeed = int.Parse(saveFileText[5]);
+            currentNewFish.GetComponent<Wanderer>().moveSpeed = int.Parse(saveFileText[fileLocation + 3]);
         }
-        else if(int.Parse(saveFileText[4]) == 5)
+        else if(int.Parse(saveFileText[fileLocation + 2]) == 5)
         {
-            currentNewFish.GetComponent<JellyfishAI>().moveSpeed = int.Parse(saveFileText[5]);
+            currentNewFish.GetComponent<JellyfishAI>().moveSpeed = int.Parse(saveFileText[fileLocation + 3]);
         }
         else
         {
-            currentNewFish.GetComponent<CrabAI>().moveSpeed = int.Parse(saveFileText[5]);
+            currentNewFish.GetComponent<CrabAI>().moveSpeed = int.Parse(saveFileText[fileLocation + 3]);
         }
 
-        if(int.Parse(saveFileText[6]) == 0)
+        if(int.Parse(saveFileText[fileLocation + 4]) == 0)
         {
             scaleMultiplyer = 6;
         }
-        else if(int.Parse(saveFileText[6]) == 1)
+        else if(int.Parse(saveFileText[fileLocation + 4]) == 1)
         {
             scaleMultiplyer = 4;
         }
@@ -97,7 +117,7 @@ public class ImportImageLoad : MonoBehaviour
             scaleMultiplyer = 2;
         }
         
-        path = saveFileText[3];
+        path = saveFileText[fileLocation + 1];
 
         StartCoroutine(DownloadImage());
     }
