@@ -35,9 +35,15 @@ public class ImportImageLoad : MonoBehaviour
         fishName = inputFieldName.text;
     }
 
-    private void Start()
+    
+
+    public Sprite returnFishSprite(string newPath)
     {
-        saveFileText = saveSystem.loadFile();
+        path = newPath;
+
+        StartCoroutine(DownloadImageReturnSprite());
+
+        return convertedSprite;
     }
 
     public void loadFish()
@@ -140,6 +146,26 @@ public class ImportImageLoad : MonoBehaviour
             convertedSprite = Sprite.Create(actualTexture, new Rect(0.0f, 0.0f, actualTexture.width, actualTexture.height), new Vector2(0.5f, 0.5f), actualTexture.width * scaleMultiplyer);
             Debug.Log(convertedSprite);
             sr.sprite = convertedSprite;
+        }
+    }
+
+    IEnumerator DownloadImageReturnSprite()
+    {
+        UnityWebRequest request  = UnityWebRequestTexture.GetTexture("file:///" + path);
+        Debug.Log(path);
+        yield return request.SendWebRequest();
+
+        if((request.result == UnityWebRequest.Result.ConnectionError) || (request.result == UnityWebRequest.Result.ProtocolError))
+        {
+            Debug.Log(request.error);
+        }
+        else
+        {
+            Debug.Log("Work?");
+            Debug.Log(((DownloadHandlerTexture)request.downloadHandler).texture);
+            actualTexture = ((DownloadHandlerTexture)request.downloadHandler).texture;
+            
+            convertedSprite = Sprite.Create(actualTexture, new Rect(0.0f, 0.0f, actualTexture.width, actualTexture.height), new Vector2(0.5f, 0.5f), actualTexture.width * 1);
         }
     }
 }
