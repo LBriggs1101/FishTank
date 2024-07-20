@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5127192386763891862}
   - component: {fileID: 7209614970846152424}
   - component: {fileID: 619598269796075501}
+  - component: {fileID: 7911104436033718271}
   m_Layer: 3
   m_Name: Lovedisk
   m_TagString: Untagged
@@ -189,3 +190,16 @@ MonoBehaviour:
   coinProduction: 2
   coinTime: 9
   invSystem: {fileID: 3879665062693224264, guid: 38ed92600ada28e4abc37fa17fa45b43, type: 3}
+--- !u!114 &7911104436033718271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2893552712618293665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00be797fa72cd9644a5b89af34fc1108, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedObject: {fileID: 0}

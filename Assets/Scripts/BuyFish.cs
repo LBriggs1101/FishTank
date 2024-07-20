@@ -9,6 +9,8 @@ public class BuyFish : MonoBehaviour
     public int fishCost;
     public PlayerInv invSystem;
 
+    public FishBreed fishBreed;
+
 
     public void GetFish()
     {
