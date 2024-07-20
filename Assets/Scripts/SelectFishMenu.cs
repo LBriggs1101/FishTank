@@ -43,43 +43,57 @@ public class SelectFishMenu : MonoBehaviour
         for(int i = 0; i < saveFileText.Length; i++)
         {
             Debug.Log(saveFileText[i]);
-            if(saveFileText[i] == "Fish")
+            Debug.Log(string.Equals(saveFileText[i].Trim(), "Fish"));
+            if(string.Equals(saveFileText[i].Trim(), "Fish"))
             {
-                Debug.Log("Fish");
+                Debug.Log("Fishy");
                 buttons.Add(fishButtonPrefab);
             }
         }
 
-        Debug.Log(buttons.Count);
+        Debug.Log("Buttons #:" + buttons.Count);
         
         for(int i = 0; i < buttons.Count; i++)
         {
             //every four because remainder will be 0123 so yeah.
             int j = i % 4;
-            actualButtons.Add(Instantiate(buttons[i], new Vector3(transform.position.x, transform.position.y - (j * 100), transform.position.x), transform.rotation, transform));
+            actualButtons.Add(Instantiate(buttons[i], new Vector3(transform.position.x + ((j % 2) * 180) - 90, transform.position.y - (((j > 1 ? 1 : 0) * 130) + 50), 0), transform.rotation, transform));
             if(i >= 4)
             {
                 actualButtons[i].SetActive(false);
             }
         }
 
+        Debug.Log("Buttons #real:" + actualButtons.Count);
         for(int i = 0; i < actualButtons.Count; i++)
         {
+            Debug.Log("Broken for loop index: " + i);
+            int fishCount = 0;
             for(int x = 0; x < saveFileText.Length; x++)
             {
-                int fishCount = 0;
-                if(saveFileText[x] == "Fish")
+                
+                if(saveFileText[x].Trim() == "Fish")
                 {
                     fishCount++;
                 }
                 if(fishCount == i + 1)
                 {
                     Debug.Log("current x index: " + x);
-                    actualButtons[i].GetComponent<Image>().sprite = actualButtons[i].GetComponent<ImportImageLoad>().returnFishSprite(saveFileText[x + 2]);
+                    bool quickCheckActive = false;
+                    if(actualButtons[i].activeSelf == false)
+                    {
+                        quickCheckActive = true;
+                        actualButtons[i].SetActive(true);
+                    }
+                    actualButtons[i].GetComponent<ImportImageLoad>().returnFishSprite(saveFileText[x + 2]);
+                    Debug.Log(actualButtons[i].GetComponent<Image>().sprite);
                     actualButtons[i].transform.GetChild(0).gameObject.GetComponent<TextMeshProUGUI>().text = saveFileText[x + 1];
                     actualButtons[i].GetComponent<ImportImageLoad>().fishName = saveFileText[x + 1];
                     x = saveFileText.Length;
+                    actualButtons[i].GetComponent<ImportImageLoad>().saveFileText = saveFileText;
+                    actualButtons[i].GetComponent<ImportImageLoad>().quickCheckActive = quickCheckActive;
                 }
+                Debug.Log("Fish Count: " + fishCount);
             }
         }
         currentIndex = 3;

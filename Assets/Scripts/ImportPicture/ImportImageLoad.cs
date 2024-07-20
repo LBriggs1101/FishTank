@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 using TMPro;
+using UnityEngine.UI;
 
 public class ImportImageLoad : MonoBehaviour
 {
@@ -30,6 +31,13 @@ public class ImportImageLoad : MonoBehaviour
     public string fishName;
     public TMP_InputField inputFieldName;
 
+    public bool quickCheckActive = false;
+
+    private void Start() 
+    {
+        //transform.localPosition = new Vector3(0, transform.localPosition.y, 0); 
+    }
+
     public void updateFishName()
     {
         fishName = inputFieldName.text;
@@ -37,13 +45,11 @@ public class ImportImageLoad : MonoBehaviour
 
     
 
-    public Sprite returnFishSprite(string newPath)
+    public void returnFishSprite(string newPath)
     {
         path = newPath;
 
         StartCoroutine(DownloadImageReturnSprite());
-
-        return convertedSprite;
     }
 
     public void loadFish()
@@ -165,7 +171,11 @@ public class ImportImageLoad : MonoBehaviour
             Debug.Log(((DownloadHandlerTexture)request.downloadHandler).texture);
             actualTexture = ((DownloadHandlerTexture)request.downloadHandler).texture;
             
-            convertedSprite = Sprite.Create(actualTexture, new Rect(0.0f, 0.0f, actualTexture.width, actualTexture.height), new Vector2(0.5f, 0.5f), actualTexture.width * 1);
+            gameObject.GetComponent<Image>().sprite = Sprite.Create(actualTexture, new Rect(0.0f, 0.0f, actualTexture.width, actualTexture.height), new Vector2(0.5f, 0.5f), actualTexture.width * 1);
+            if(quickCheckActive == true)
+            {
+                gameObject.SetActive(false);
+            }
         }
     }
 }
