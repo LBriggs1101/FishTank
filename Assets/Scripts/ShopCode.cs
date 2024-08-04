@@ -12,6 +12,7 @@ public class ShopCode : MonoBehaviour
     [SerializeField] GameObject deepShop;
     [SerializeField] GameObject oddShop;
     [SerializeField] GameObject shopButton;
+    [SerializeField] GameObject customFish;
 
 
     public void ShopOpen()
@@ -30,6 +31,7 @@ public class ShopCode : MonoBehaviour
         bigShop.SetActive(false);
         deepShop.SetActive(false);
         oddShop.SetActive(false);
+        customFish.SetActive(false);
 
         shopButton.SetActive(true);
     }
@@ -41,6 +43,7 @@ public class ShopCode : MonoBehaviour
         bigShop.SetActive(false);
         deepShop.SetActive(false);
         oddShop.SetActive(false);
+        customFish.SetActive(false);
     }
 
     public void MidFish()
@@ -50,6 +53,7 @@ public class ShopCode : MonoBehaviour
         bigShop.SetActive(false);
         deepShop.SetActive(false);
         oddShop.SetActive(false);
+        customFish.SetActive(false);
     }
 
     public void BigFish()
@@ -59,6 +63,7 @@ public class ShopCode : MonoBehaviour
         bigShop.SetActive(true);
         deepShop.SetActive(false);
         oddShop.SetActive(false);
+        customFish.SetActive(false);
     }
 
     public void DeepFish()
@@ -68,6 +73,7 @@ public class ShopCode : MonoBehaviour
         bigShop.SetActive(false);
         deepShop.SetActive(true);
         oddShop.SetActive(false);
+        customFish.SetActive(false);
     }
 
     public void OddFish()
@@ -77,6 +83,17 @@ public class ShopCode : MonoBehaviour
         bigShop.SetActive(false);
         deepShop.SetActive(false);
         oddShop.SetActive(true);
+        customFish.SetActive(false);
+    }
+
+    public void CustomFish()
+    {
+        smallShop.SetActive(false);
+        midShop.SetActive(false);
+        bigShop.SetActive(false);
+        deepShop.SetActive(false);
+        oddShop.SetActive(false);
+        customFish.SetActive(true);
     }
 
 }

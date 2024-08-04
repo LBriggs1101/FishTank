@@ -56,9 +56,9 @@ public class SelectFishMenu : MonoBehaviour
         for(int i = 0; i < buttons.Count; i++)
         {
             //every four because remainder will be 0123 so yeah.
-            int j = i % 4;
-            actualButtons.Add(Instantiate(buttons[i], new Vector3(transform.position.x + ((j % 2) * 180) - 90, transform.position.y - (((j > 1 ? 1 : 0) * 130) + 50), 0), transform.rotation, transform));
-            if(i >= 4)
+            int j = i % 10;
+            actualButtons.Add(Instantiate(buttons[i], new Vector3(transform.position.x + ((j % 5) * 180) - 90, transform.position.y - (((j > 4 ? 1 : 0) * 180) + 50), 0), transform.rotation, transform));
+            if(i >= 10)
             {
                 actualButtons[i].SetActive(false);
             }
@@ -96,35 +96,35 @@ public class SelectFishMenu : MonoBehaviour
                 Debug.Log("Fish Count: " + fishCount);
             }
         }
-        currentIndex = 3;
+        currentIndex = 9;
     }
 
     public void nextPage()
     {
         if(actualButtons.Count > currentIndex + 1)
         {
-            for(int i = currentIndex - 3; i <= currentIndex; i++)
+            for(int i = currentIndex - 9; i <= currentIndex; i++)
             {
                 actualButtons[i].SetActive(false);
             }
-            for(int i = currentIndex + 1; i < actualButtons.Count && i <= currentIndex + 4; i++)
+            for(int i = currentIndex + 1; i < actualButtons.Count && i <= currentIndex + 10; i++)
             {
                 actualButtons[i].SetActive(true);
             }
-            currentIndex += 4;
+            currentIndex += 10;
         }
     }
 
     public void previousPage()
     {
-        if(currentIndex > 3)
+        if(currentIndex > 9)
         {
-            for(int i = currentIndex - 3; i <= currentIndex && i < actualButtons.Count; i++)
+            for(int i = currentIndex - 9; i <= currentIndex && i < actualButtons.Count; i++)
             {
                 actualButtons[i].SetActive(false);
             }
-            currentIndex -= 4;
-            for(int i = currentIndex - 3; i <= currentIndex; i++)
+            currentIndex -= 10;
+            for(int i = currentIndex - 9; i <= currentIndex; i++)
             {
                 actualButtons[i].SetActive(true);
             }

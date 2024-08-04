@@ -5,7 +5,7 @@ using System.IO;
 
 public class SaveFile : MonoBehaviour
 {
-    private string directory;
+    private string directory = Application.dataPath + "/SaveFolder/Save.txt";
     
     private void Start() 
     {
@@ -29,7 +29,10 @@ public class SaveFile : MonoBehaviour
 
     public string[] loadFile()
     {
+        Debug.Log(directory);
         StreamReader reader = new StreamReader(directory);
+        
+        Debug.Log(reader);
         string text = reader.ReadToEnd();
 
         reader.Close();
