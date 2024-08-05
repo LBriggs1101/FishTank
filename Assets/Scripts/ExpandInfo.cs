@@ -8,6 +8,8 @@ public class ExpandInfo : MonoBehaviour
     [SerializeField] PageController pageController;
     public int pageVal;
 
+    [SerializeField] GameObject[] otherInfos;
+
     public void fishPage()
     {
 
@@ -20,6 +22,12 @@ public class ExpandInfo : MonoBehaviour
         {
             fishInfo.SetActive(false);
         }*/
+
+        for(int i = 0; i < otherInfos.Length; i++)
+        {
+            otherInfos[i].SetActive(false);
+        }
+
     }
 
     public void closePage()

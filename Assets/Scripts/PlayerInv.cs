@@ -10,6 +10,7 @@ public class PlayerInv : MonoBehaviour
 
     public PlayerInv invSystem;
     public Texture2D coinIcon;
+    public bool hideUI = false;
 
 
     void Start()
@@ -25,7 +26,16 @@ public class PlayerInv : MonoBehaviour
 
     public void OnGUI()
     {
-        GUI.Label(new Rect(10, 10, 100, 100), coinIcon);
-        GUI.Label(new Rect(110, 45, 100, 100), playerCoins.ToString());
+        if(!hideUI)
+        {
+            GUI.Label(new Rect(10, 10, 100, 100), coinIcon);
+            GUI.Label(new Rect(110, 45, 100, 100), playerCoins.ToString());
+        }
+        else
+        {
+            GUI.Label(new Rect(99999, 99999, 99999, 99999), coinIcon);
+            GUI.Label(new Rect(99999, 99999, 99999, 99999), playerCoins.ToString());
+        }
+        
     }
 }
