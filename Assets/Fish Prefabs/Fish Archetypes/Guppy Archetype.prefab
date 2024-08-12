@@ -186,6 +186,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8530ec8919ce6443b3a73e0d40f52de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinProduction: 1
+  coinProduction: 0
   coinTime: 5
   invSystem: {fileID: 3879665062693224264, guid: 38ed92600ada28e4abc37fa17fa45b43, type: 3}

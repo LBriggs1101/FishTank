@@ -10,7 +10,7 @@ public class PlayerInv : MonoBehaviour
 
     public PlayerInv invSystem;
     public Texture2D coinIcon;
-    public bool hideUI = false;
+    [SerializeField] public bool hideUI = false;
 
 
     void Start()
@@ -37,5 +37,15 @@ public class PlayerInv : MonoBehaviour
             GUI.Label(new Rect(99999, 99999, 99999, 99999), playerCoins.ToString());
         }
         
+    }
+
+    public void disableUI()
+    {
+        hideUI = true;
+    }
+
+    public void enableUI()
+    {
+        hideUI = false;
     }
 }

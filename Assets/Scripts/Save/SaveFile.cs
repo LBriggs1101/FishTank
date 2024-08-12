@@ -27,6 +27,18 @@ public class SaveFile : MonoBehaviour
         );
     }
 
+    public void saveNewBackground(string backgroundName, string filePath)
+    {
+        File.AppendAllText(
+        directory, 
+        "\n" +
+        "Background" + "\n" +
+        backgroundName + "\n" +
+        filePath + "\n"    
+
+        );
+    }
+
     public string[] loadFile()
     {
         Debug.Log(directory);

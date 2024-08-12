@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameScene 1.unity
     guid: 50c7a12bd35355742bdd3bdd995f0a46
+  - enabled: 1
+    path: Assets/Scenes/BackgroundImport.unity
+    guid: 2081f2b3f6000b548aaa180e919be92f
   m_configObjects: {}

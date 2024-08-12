@@ -57,13 +57,17 @@ public class ImportImageLoad : MonoBehaviour
 
         for(int x = 0; x < saveFileText.Length; x++)
         {
-            if(saveFileText[x] == fishName)
+            if(string.Equals(saveFileText[x].Trim(), "Fish"))
             {
-                fileLocation = x;
+                if(saveFileText[x + 1] == fishName)
+                {
+                    fileLocation = x + 1;
+                    break;
+                }
             }
         }
 
-        Debug.Log(int.Parse(saveFileText[fileLocation + 2]));
+        Debug.Log(fileLocation + 2);
 
         switch(int.Parse(saveFileText[fileLocation + 2]))
         {

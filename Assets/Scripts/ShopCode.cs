@@ -13,6 +13,7 @@ public class ShopCode : MonoBehaviour
     [SerializeField] GameObject oddShop;
     [SerializeField] GameObject shopButton;
     [SerializeField] GameObject customFish;
+    [SerializeField] GameObject customBG;
 
 
     public void ShopOpen()
@@ -32,6 +33,7 @@ public class ShopCode : MonoBehaviour
         deepShop.SetActive(false);
         oddShop.SetActive(false);
         customFish.SetActive(false);
+        customBG.SetActive(false);
 
         shopButton.SetActive(true);
     }
@@ -44,6 +46,7 @@ public class ShopCode : MonoBehaviour
         deepShop.SetActive(false);
         oddShop.SetActive(false);
         customFish.SetActive(false);
+        customBG.SetActive(false);
     }
 
     public void MidFish()
@@ -54,6 +57,7 @@ public class ShopCode : MonoBehaviour
         deepShop.SetActive(false);
         oddShop.SetActive(false);
         customFish.SetActive(false);
+        customBG.SetActive(false);
     }
 
     public void BigFish()
@@ -64,6 +68,7 @@ public class ShopCode : MonoBehaviour
         deepShop.SetActive(false);
         oddShop.SetActive(false);
         customFish.SetActive(false);
+        customBG.SetActive(false);
     }
 
     public void DeepFish()
@@ -74,6 +79,7 @@ public class ShopCode : MonoBehaviour
         deepShop.SetActive(true);
         oddShop.SetActive(false);
         customFish.SetActive(false);
+        customBG.SetActive(false);
     }
 
     public void OddFish()
@@ -84,6 +90,7 @@ public class ShopCode : MonoBehaviour
         deepShop.SetActive(false);
         oddShop.SetActive(true);
         customFish.SetActive(false);
+        customBG.SetActive(false);
     }
 
     public void CustomFish()
@@ -94,6 +101,18 @@ public class ShopCode : MonoBehaviour
         deepShop.SetActive(false);
         oddShop.SetActive(false);
         customFish.SetActive(true);
+        customBG.SetActive(false);
+    }
+
+    public void CustomBG()
+    {
+        smallShop.SetActive(false);
+        midShop.SetActive(false);
+        bigShop.SetActive(false);
+        deepShop.SetActive(false);
+        oddShop.SetActive(false);
+        customFish.SetActive(false);
+        customBG.SetActive(true);
     }
 
 }

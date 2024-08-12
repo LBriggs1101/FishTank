@@ -5,73 +5,46 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
 
-public class SaveTest : MonoBehaviour
+public class SaveTestBackground : MonoBehaviour
 {
-
     public SaveFile saveSystem;
-
-    public TMP_Dropdown dropDown;
-
-    public TMP_Dropdown dropDownSize;
 
     public TMP_InputField inputFieldName;
 
-    public TMP_InputField inputFieldSpeed;
+    public ImportImagePathBackground imageImportObject;
 
-    public ImportImagePath imageImportObject;
-
-    public string fishPath = "";
-    public string fishName = "";
-
-    public int fishType = 0;
-    public int fishSpeed = 1;
-    public int fishSize = 0;
+    public string backgroundPath = "";
+    public string backgroundName = "";
 
     public GameObject failText;
 
-    public void changeFishType()
+    public void changeBackgroundName()
     {
-        fishType = dropDown.value;
-    }
-
-    public void changeFishSize()
-    {
-        fishSize = dropDownSize.value;
-    }
-
-    public void changeFishName()
-    {
-        fishName = inputFieldName.text;
-    }
-
-    public void changeFishSpeed()
-    {
-        fishSpeed = int.Parse(inputFieldSpeed.text);
+        backgroundName = inputFieldName.text;
     }
 
     public void saveTest()
     {
-        if((fishPath != null && fishPath != "") && (fishName != null && fishName != ""))
+        if((backgroundPath != null && backgroundPath != "") && (backgroundName != null && backgroundName != ""))
         {
             string[] tempFile = saveSystem.loadFile();
-
             if(tempFile != null)
             {
-                for(int i = 0; i < tempFile.Length; i++)
+               for(int i = 0; i < tempFile.Length; i++)
                 {
-                    if(string.Equals(tempFile[i], "Fish"))
+                    if(string.Equals(tempFile[i], "Background"))
                     {
-                        if(tempFile[i + 1] == fishName)
+                        if(tempFile[i + 1] == backgroundName)
                         {
                             failText.SetActive(true);
                             StartCoroutine(timedDisableText()); 
                             return;
                         }
                     }
-                }
+                } 
             }
             
-            saveSystem.saveNewFish(fishPath, fishName, fishType, fishSpeed, fishSize);
+            saveSystem.saveNewBackground(backgroundName, backgroundPath);
             imageImportObject.MoveImageForSave();
             SceneManager.LoadScene("MainMenu");
         }
