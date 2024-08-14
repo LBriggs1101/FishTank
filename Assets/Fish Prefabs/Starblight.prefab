@@ -14,10 +14,10 @@ GameObject:
   - component: {fileID: 1789573352024744778}
   - component: {fileID: 3004469371314352279}
   - component: {fileID: -3535635411765329692}
-  - component: {fileID: 4852079992210444919}
-  - component: {fileID: 5977224606912387305}
+  - component: {fileID: 952659619226041494}
+  - component: {fileID: 8387079746285530983}
   m_Layer: 3
-  m_Name: Franken-Guppy
+  m_Name: Starblight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33,7 +33,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.4732, y: -1.1664, z: 0}
-  m_LocalScale: {x: 3.251408, y: 2.627758, z: 0.6598269}
+  m_LocalScale: {x: 0.32163116, y: 0.25993934, z: 0.06527045}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -79,7 +79,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 6cde678f241de6d45947b82fbfbbf95a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e8689b6f96bbcbb42850467bd5a4026f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -129,8 +129,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ca9ec6ee26c9f7459c4dff8d9ab0a54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2
-  decisionTime: {x: 0.1, y: 1, z: 0}
+  moveSpeed: 6
+  decisionTime: {x: 0.1, y: 0.3, z: 0}
 --- !u!61 &3004469371314352279
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -167,7 +167,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.256, y: 0.256}
+    oldSize: {x: 1.28, y: 1.28}
     newSize: {x: 4.89, y: 2.93}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -189,9 +189,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinProduction: 1
-  coinTime: 5
+  coinTime: 30
   invSystem: {fileID: 3879665062693224264, guid: 38ed92600ada28e4abc37fa17fa45b43, type: 3}
---- !u!114 &4852079992210444919
+--- !u!114 &952659619226041494
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -204,7 +204,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectedObject: {fileID: 0}
---- !u!82 &5977224606912387305
+--- !u!82 &8387079746285530983
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -217,7 +217,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: e67d5799721a7ce40a40e75c71be5c8e, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 3
   Loop: 0
   Mute: 0
   Spatialize: 0
