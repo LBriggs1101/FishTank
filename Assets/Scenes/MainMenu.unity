@@ -38,6 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -160,7 +161,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 98}
-  m_SizeDelta: {x: 320, y: 100}
+  m_SizeDelta: {x: 320, y: 169.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &140733036
 MonoBehaviour:
@@ -250,9 +251,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
+  m_Sprite: {fileID: 21300000, guid: 7718caeebde69d844bbc1571b3168287, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -285,7 +286,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &145307565
 RectTransform:
   m_ObjectHideFlags: 0
@@ -477,7 +478,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -860, y: -472}
-  m_SizeDelta: {x: 172.37, y: 106.3}
+  m_SizeDelta: {x: 253, y: 161.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &230240198
 MonoBehaviour:
@@ -567,9 +568,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
+  m_Sprite: {fileID: 21300000, guid: 7633891995c7afc4c88880a134518962, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -904,7 +905,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '- Added Game Logo'
+  m_Text: "- Added backgrounds to create fish and \n   background menus"
 --- !u!222 &394621879
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -983,7 +984,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '- Added Changelogs! Hello!'
+  m_Text: 
 --- !u!222 &531137667
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1009,7 +1010,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &682538445
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1242,7 +1243,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -204.79, y: -50}
-  m_SizeDelta: {x: 320, y: 100}
+  m_SizeDelta: {x: 320, y: 169.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &717938062
 MonoBehaviour:
@@ -1332,9 +1333,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
+  m_Sprite: {fileID: 21300000, guid: a47a33d7b7a4ceb42b4f83069f1dc772, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -1367,7 +1368,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &735270326
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1735,7 +1736,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &977000078
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1835,7 +1836,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 204.79, y: -50}
-  m_SizeDelta: {x: 320, y: 100}
+  m_SizeDelta: {x: 320, y: 169.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &996697078
 MonoBehaviour:
@@ -1925,9 +1926,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
+  m_Sprite: {fileID: 21300000, guid: 2a0b7bba05b361a4f8cabed99f7e07e6, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -2089,7 +2090,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '- Added Missing Fish Description'
+  m_Text: "- Added background and UI art to title \n   screen"
 --- !u!222 &1072037747
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2135,8 +2136,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -106.86, y: -162}
-  m_SizeDelta: {x: 124.1404, y: 62.5342}
+  m_AnchoredPosition: {x: -106.86, y: -231.35}
+  m_SizeDelta: {x: 191.8, y: 89.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1095874612
 MonoBehaviour:
@@ -2226,9 +2227,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
+  m_Sprite: {fileID: 21300000, guid: 163ab03bccc05074db37324e0fe5b6bc, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -2281,8 +2282,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 106.86, y: -162}
-  m_SizeDelta: {x: 124.1404, y: 62.5342}
+  m_AnchoredPosition: {x: 106.86, y: -231.35}
+  m_SizeDelta: {x: 191.8, y: 89.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1099338554
 MonoBehaviour:
@@ -2372,9 +2373,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
+  m_Sprite: {fileID: 21300000, guid: 7b4bc701dd776734e8e6ff89642334cd, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -2424,8 +2425,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -88, y: -230}
-  m_SizeDelta: {x: 956.2841, y: 125.7786}
+  m_AnchoredPosition: {x: -68, y: -228.96143}
+  m_SizeDelta: {x: 916.28, y: 123.7015}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1239780643
 MonoBehaviour:
@@ -2454,13 +2455,13 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 69
-    m_Alignment: 4
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '- Added Djungaro Floater and Starblight Microbe'
+  m_Text: "- Fixed Item Description Pages for added    \n   fish from version 0.3.5"
 --- !u!222 &1239780644
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2565,7 +2566,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1314736143
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2852,7 +2853,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Version 0.3.5
+  m_Text: Version 0.4
 --- !u!222 &1507422165
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2955,7 +2956,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1562718882
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3277,7 +3278,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 0.3.5
+  m_Text: 0.4
 --- !u!222 &1714274563
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3343,7 +3344,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a899a03d63915ed419debd33c3a3b831, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e93e44ce0d821b24e8190e991c46035b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
