@@ -905,7 +905,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "- Added backgrounds to create fish and \n   background menus"
+  m_Text: "- Note: (only custom fish  and background \n   save in the class period)"
 --- !u!222 &394621879
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -973,7 +973,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 8614a3a4cf61e5c4db1db9ac6e729e06, type: 3}
-    m_FontSize: 35
+    m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -984,7 +984,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: "- Note: (Cannot delete individual fish in a class period, you need \n  
+    to delete and redo a class period do so. New fish will be added \n   and saved
+    without needing to redo)"
 --- !u!222 &531137667
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2090,7 +2092,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "- Added background and UI art to title \n   screen"
+  m_Text: '- Added ability to delete saved fish'
 --- !u!222 &1072037747
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2461,7 +2463,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "- Fixed Item Description Pages for added    \n   fish from version 0.3.5"
+  m_Text: "- Added ability to save a tank for each \n   class period"
 --- !u!222 &1239780644
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2853,7 +2855,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Version 0.4
+  m_Text: Version 0.5
 --- !u!222 &1507422165
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2879,7 +2881,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1542533011
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3278,7 +3280,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 0.4
+  m_Text: 0.5
 --- !u!222 &1714274563
 CanvasRenderer:
   m_ObjectHideFlags: 0
