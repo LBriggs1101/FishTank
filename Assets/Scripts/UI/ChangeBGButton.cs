@@ -48,6 +48,29 @@ public class ChangeBGButton : MonoBehaviour
                 if(saveFileText[i + 1] == bgName)
                 {
                     fileLocation = i + 1;
+                    GameObject.Find("ClassPeriodManager").GetComponent<SaveClassPeriod>().saveNewClassBG(bgName);
+                    break;
+                }
+            }
+        }
+
+        path = saveFileText[fileLocation + 1];
+
+        StartCoroutine(DownloadImage());
+    }
+
+    public void loadBGFromName(string thisBGName)
+    {
+        GameObject.Find("Ocean Background").SetActive(false);
+        sr = GameObject.Find("Ocean Background Custom").GetComponent<SpriteRenderer>();
+
+        for(int i = 0; i < saveFileText.Length; i++)
+        {
+            if(string.Equals(saveFileText[i].Trim(), "Background"))
+            {
+                if(saveFileText[i + 1] == thisBGName)
+                {
+                    fileLocation = i + 1;
                     break;
                 }
             }

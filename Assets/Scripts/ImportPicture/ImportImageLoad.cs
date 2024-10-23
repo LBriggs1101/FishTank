@@ -62,6 +62,7 @@ public class ImportImageLoad : MonoBehaviour
                 if(saveFileText[x + 1] == fishName)
                 {
                     fileLocation = x + 1;
+                    GameObject.Find("ClassPeriodManager").GetComponent<SaveClassPeriod>().saveTankFish(fishName);
                     break;
                 }
             }
@@ -135,10 +136,10 @@ public class ImportImageLoad : MonoBehaviour
         
         path = saveFileText[fileLocation + 1];
 
-        StartCoroutine(DownloadImage());
+        StartCoroutine(DownloadImage(sr));
     }
 
-    IEnumerator DownloadImage()
+    IEnumerator DownloadImage(SpriteRenderer SR)
     {
         UnityWebRequest request  = UnityWebRequestTexture.GetTexture("file:///" + path);
         Debug.Log(path);
@@ -155,7 +156,7 @@ public class ImportImageLoad : MonoBehaviour
             actualTexture = ((DownloadHandlerTexture)request.downloadHandler).texture;
             convertedSprite = Sprite.Create(actualTexture, new Rect(0.0f, 0.0f, actualTexture.width, actualTexture.height), new Vector2(0.5f, 0.5f), actualTexture.width * scaleMultiplyer);
             Debug.Log(convertedSprite);
-            sr.sprite = convertedSprite;
+            SR.sprite = convertedSprite;
         }
     }
 
@@ -181,5 +182,90 @@ public class ImportImageLoad : MonoBehaviour
                 gameObject.SetActive(false);
             }
         }
+    }
+    public void loadFishFromName(string actualFishName)
+    {
+
+        for(int x = 0; x < saveFileText.Length; x++)
+        {
+            if(string.Equals(saveFileText[x].Trim(), "Fish"))
+            {
+                if(saveFileText[x + 1] == actualFishName)
+                {
+                    fileLocation = x + 1;
+                    break;
+                }
+            }
+        }
+
+        Debug.Log(fileLocation + 2);
+
+        switch(int.Parse(saveFileText[fileLocation + 2]))
+        {
+            case 0:
+                objectToSpawn = prefabGuppy;
+                break;
+            case 1:
+                objectToSpawn = prefabDeepGuppy;
+                break; 
+            case 2:
+                objectToSpawn = prefabLazy;
+                break;
+            case 3:
+                objectToSpawn = prefabDeepLazy;
+                break;
+            case 4:
+                objectToSpawn = prefabErratic;
+                break;
+            case 5:
+                objectToSpawn = prefabJelly;
+                break;
+            case 6:
+                objectToSpawn = prefabCrab;
+                break;
+        }
+
+        if(int.Parse(saveFileText[fileLocation + 2]) == 1 || int.Parse(saveFileText[fileLocation + 2]) == 3 || int.Parse(saveFileText[fileLocation + 2]) == 6)
+        {
+            spawnLocation = new Vector3(0, -3, 0);
+        }
+        else
+        {
+            spawnLocation = new Vector3(0, 0, 0);
+        }
+
+        GameObject currentNewFish = Instantiate(objectToSpawn, spawnLocation , Quaternion.identity);
+
+        sr = currentNewFish.GetComponent<SpriteRenderer>();
+
+        if(int.Parse(saveFileText[fileLocation + 2]) < 5)
+        {
+            currentNewFish.GetComponent<Wanderer>().moveSpeed = int.Parse(saveFileText[fileLocation + 3]);
+        }
+        else if(int.Parse(saveFileText[fileLocation + 2]) == 5)
+        {
+            currentNewFish.GetComponent<JellyfishAI>().moveSpeed = int.Parse(saveFileText[fileLocation + 3]);
+        }
+        else
+        {
+            currentNewFish.GetComponent<CrabAI>().moveSpeed = int.Parse(saveFileText[fileLocation + 3]);
+        }
+
+        if(int.Parse(saveFileText[fileLocation + 4]) == 0)
+        {
+            scaleMultiplyer = 6;
+        }
+        else if(int.Parse(saveFileText[fileLocation + 4]) == 1)
+        {
+            scaleMultiplyer = 4;
+        }
+        else
+        {
+            scaleMultiplyer = 2;
+        }
+        
+        path = saveFileText[fileLocation + 1];
+
+        StartCoroutine(DownloadImage(sr));
     }
 }
